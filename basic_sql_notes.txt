@@ -1,0 +1,25 @@
+The following constraints are commonly used in SQL:
+
+NOT NULL - Ensures that a column cannot have a NULL value
+UNIQUE - Ensures that all values in a column are different
+PRIMARY KEY - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY - Prevents actions that would destroy links between tables
+CHECK - Ensures that the values in a column satisfies a specific condition
+DEFAULT - Sets a default value for a column if no value is specified
+CREATE INDEX - Used to create and retrieve data from the database very quickly
+
+
+
+
+In PostgreSQL, the `SET` clause is used in various scenarios when altering a column. Here's an exhaustive list of situations where the `SET` clause can be used:
+
+1. **Set a Default Value:** Use `SET DEFAULT` to specify a default value for the column.
+2. **Drop Default Value:** Use `DROP DEFAULT` to remove the default value for the column.
+3. **Set NULL Constraint:** Use `SET NOT NULL` to enforce the column to not allow NULL values.
+4. **Drop NULL Constraint:** Use `DROP NOT NULL` to remove the NOT NULL constraint from the column, allowing NULL values.
+5. **Set Data Type:** Use `SET DATA TYPE` or simply `TYPE` to change the data type of the column.
+6. **Set Storage Parameters:** Use `SET STORAGE` to modify the storage parameters of the column.
+7. **Set Column Statistics:** Use `SET STATISTICS` to adjust the statistics target for the column.
+8. **Set Column Collation:** Use `SET COLLATION` to change the collation of the column, affecting string comparison behavior.
+9. **Set Compression Options:** Use `SET COMPRESSION` to set compression options for the column when using table compression.
+

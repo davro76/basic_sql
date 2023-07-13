@@ -1,0 +1,19 @@
+
+-- alter table
+
+
+--add column
+--ALTER TABLE employee
+--ADD COLUMN telephone_no CHAR(15) NULL;
+
+--drop column
+--ALTER TABLE employee
+--DROP  COLUMN telephone_no;
+
+
+--create sales table
+CREATE TABLE sales(
+    order_no INTEGER NOT NULL,
+    order_date DATE NOT NULL,
+    ship_date DATE NOT NULL
+);
